@@ -21,8 +21,8 @@ public class MaterialController : MonoBehaviour
     [Range(0, 1)]
     public float specularStrengthReflectivity;
 
-    [Range(1, 256)]
-    public float shininess;
+    [Range(1, 128)]
+    public int shininess;
 
     private void Start()
     {
@@ -48,10 +48,9 @@ public class MaterialController : MonoBehaviour
             material.material.SetFloat("_LightStrength", lightStrength);
             material.material.SetFloat("_DifuseStrengthReflectivity", difuseStrengthReflectivity);
             material.material.SetFloat("_SpecularStrengthReflectivity", specularStrengthReflectivity);
-
             try
             {
-                material.material.SetFloat("_Shininess", shininess);
+                material.material.SetInt("_Shininess", shininess);
             }
             catch{}
         }
