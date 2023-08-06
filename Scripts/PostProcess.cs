@@ -13,7 +13,7 @@ public class PostProcess : MonoBehaviour
     [ExecuteInEditMode]
     private void OnRenderImage(RenderTexture source, RenderTexture destination)
     {
-        if(activePixelization)
+        if (activePixelization)
         {
             pixelMaterial.SetInt("_PixelSize", pixelSize);
             Graphics.Blit(source, destination, pixelMaterial);

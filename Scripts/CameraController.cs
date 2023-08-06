@@ -10,7 +10,6 @@ public class CameraController : MonoBehaviour
     void Start()
     {
         eye = GetComponent<Transform>();
-        // at.position = new Vector3(0,0,0);
         initialPosition = transform.position;
     }
 
