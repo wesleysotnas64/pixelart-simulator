@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Phong
-  m_Shader: {fileID: 4800000, guid: b0b707ce632d4db42acf5ae89dc26710, type: 3}
+  m_Name: PhongMaterial
+  m_Shader: {fileID: 4800000, guid: 00d1c6b5c0de2e34780b58cf5b5422ee, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -25,12 +25,12 @@ Material:
     m_TexEnvs: []
     m_Ints: []
     m_Floats:
-    - _AmbientStrength: 0.64
-    - _AmbientStrengthReflectivity: 0.52
-    - _DifuseStrengthReflectivity: 0.65
-    - _LightStrength: 0.72
-    - _Shininess: 119
-    - _SpecularStrengthReflectivity: 1
+    - _AmbientStrength: 0.1
+    - _AmbientStrengthReflectivity: 0.5
+    - _DifuseStrengthReflectivity: 0.1
+    - _LightStrength: 0.1
+    - _Shininess: 32
+    - _SpecularStrengthReflectivity: 0.5
     m_Colors:
     - _Albedo: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
